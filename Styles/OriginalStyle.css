@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+}
+.register{
+    width: 50%;
+}
+/*******************************start of side menu******************************/
+.sidenav{
+    grid-area: side;
+    height: 100vh;
+    background-color: #152852;
+    display: grid;
+    grid-template-areas:
+    'top'
+    'mid'
+    'mid'
+    'mid'
+    'bottom';
+}
+.sidenav h3{
+    color: white;
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.side-menu{
+    color: white;
+    grid-area: mid;
+    margin: 0;
+}
+.side-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.side-menu a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.side-menu ul li{
+    padding: 1em;
+    background-color: #152852;
+}
+.side-menu li:hover{
+    background-color: white;
+    color: #152852;
+    transition: ease-in-out 0.3s;
+}
+.user{
+    color: white;
+    grid-area: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user a{
+    text-decoration: none;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 0.5em; ;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #091631;
+}
+/*******************************end of side menu******************************/
+/*******************************start of header*******************************/
+.header{
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 2px 2px -2px gray;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+.empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon a{
+    color: #152852;
+}
+.edit-delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.edit-delete a{
+    color: #152852;
+}
+/*******************************end of header******************************/
+/*******************************start of main content**********************/
+.col-sm-10 h5{
+    margin-top: 1em;
+}
+.btn-primary{
+    background-color: #152852;
+    border: 0;
+    margin-top: 1em;
+}
+.btn-primary:hover{
+    color: #152852;
+    background-color: white;
+}
+.table{
+    margin-top: 1em;
+}
+.table th{
+    background-color: #152852;
+    color: white;
+}
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.edit-delete{
+    text-decoration: none;
+    color: black;
+}
+.table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.table tr:hover {
+    background-color: #ddd;
+}
+/*******************************start of dashboard content**********************/
+.top-container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-container a{
+    text-decoration: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.project-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#projectChart{
+    height: 200px;
+    width: 200px;
+}
+/*******************************end of dashboard content**********************/
+/*******************************start of spending & earnings content**********************/
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.top-container-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#myChart{
+    width: 300px;
+    height: 300px;
+}
+.chart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#myChart1{
+    width: 300px;
+    height: 300px;
+}
+/*******************************end of spending & earnings content**********************/
+
+.container{
+    padding: 2em;
+    margin-bottom: 2em;
+}
+.form-header{
+    width: 100vw;
+    height: 70px;
+    background-color: #091631;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-header h3{
+    color: white;
+}
