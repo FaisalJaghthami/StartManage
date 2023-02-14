@@ -1,12 +1,12 @@
 <?php
     $host = "localhost";
-    $dbname = "epiz_33317695_project";
-    $username = "epiz_33317695";
-    $password = "SrP0e1vISkSI";
+    $dbname = "project";
+    $username = "root";
+    $password = "";
     
-    $conn = new mysqli('localhost', 'epiz_33317695', 'SrP0e1vISkSI', 'epiz_33317695_project');
+    $conn = new mysqli('localhost', 'root', '', 'project');
 
-    if(!$conn){
-        echo: "Connection error: " .mysqli_connect_error();
+    if($conn->connect_error){
+        die("Connection error: " .$conn->connect_error);
     }
 ?>
